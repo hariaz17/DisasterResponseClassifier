@@ -7,7 +7,9 @@ This web based application was developed as part of a Udacity programme project 
 
 An example of a message and the application's categorisations can be seen in the screenshot below:
 
-SCREENSHOTS
+![Index Page](Screenshot_1.PNG)
+
+![Classifier Page](Screenshot_2.PNG)
 
 ## **Quick Start**
 
@@ -35,18 +37,18 @@ The application also allows for re-training of the machine learning model. In or
 
 The application has been developed primarily in Python v 3.6.3, using the Flask framework. The application has external package dependecies which can be seen below. These need to be installed before running the scripts:
 
-NumPy 1.12.1
-Pandas 0.23.3
-Matplotlib 2.1.0
-Json
-Plotly 2.0.15
-Nltk 3.2.5
-Flask 0.12.5
-Sklearn 0.19.1
-Sqlalchemy 1.2.19
-Sys
-Re
-Pickle
+* NumPy 1.12.1
+* Pandas 0.23.3
+* Matplotlib 2.1.0
+* Json
+* Plotly 2.0.15
+* Nltk 3.2.5
+* Flask 0.12.5
+* Sklearn 0.19.1
+* Sqlalchemy 1.2.19
+* Sys
+* Re
+* Pickle
 
 
 ## **Description of Files**
@@ -64,4 +66,4 @@ Folder           | File                   | Description
 /models          | train_classifier.py    | Python file containing the full ML pipeline
 
 ## **License**
-This app was completed as part of the Udacity Programme Portfolio with the data contributed from Figure Eight.      
+This app was completed by Hammad Riaz (hammadriaz_@hotmail.com) as part of the Udacity Programme Portfolio with the data contributed from Figure Eight.      
