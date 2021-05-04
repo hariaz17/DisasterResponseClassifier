@@ -65,5 +65,9 @@ Folder           | File                   | Description
 /models          | classifier.pkl         | Trained model used by the web application to classify messages
 /models          | train_classifier.py    | Python file containing the full ML pipeline
 
+## **Acknowledgement**
+
+This application utilises third-party open-source frameworks such as the packages mentioned in _**dependencies & installations**_. Additionally, the templates for the front-end were provided by Udacity and are based on Bootstrap. Finally, the training data has been sourced by Udacity from Figure eight
+
 ## **License**
 This app was completed by Hammad Riaz (hammadriaz_@hotmail.com) as part of the Udacity Programme Portfolio with the data contributed from Figure Eight.      
