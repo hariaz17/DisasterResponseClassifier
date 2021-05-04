@@ -47,15 +47,9 @@ def load_data(database_filepath):
     #read in the Messages table into a pandas dataframe
     df = pd.read_sql_table('Messages_Master',engine)
     
-    #drop all rows with label = 2 for the "related column". It looks like data issue
-    #All other columns only have 1 or 0 labels. Additionally, the 188 rows being dropped
-    #Have 0 labels in all the other 35 categories.
-    
-    df = df[df['related']!=2]
-
     #store the messages column as the X variable to process and train the model
     X = df['message']
-
+    
     #store the 36 category columns into Y variable to train and test the model predictions
     Y = df.drop(columns=['message','genre','original','id'])
 
