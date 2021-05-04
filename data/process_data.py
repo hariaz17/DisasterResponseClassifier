@@ -73,6 +73,14 @@ def clean_data(df):
         # check number of duplicates
         df.drop_duplicates(keep='first',inplace=True)
         
+        #drop all rows with label = 2 for the "related column". Although, these can be replaced with "1" 
+        #It looks like a data issue upon further investigation, so my preference is to drop these as the data for all other 35 
+        #columns is marked as "0" and some of the messages are genres aren't populated either.
+        #All other columns only have 1 or 0 labels. Additionally, the 188 rows being dropped
+        #Have 0 labels in all the other 35 categories.
+    
+        df = df[df['related']!=2]
+        
         return df
     
     except:
@@ -97,7 +105,7 @@ def save_data(df, database_filename):
     """
     try:
         engine = create_engine('sqlite:///{}'.format(database_filename))
-        df.to_sql('Messages_Master',engine, index=False)
+        df.to_sql('Messages_Master',engine, if_exists ='replace',index=False)
         
     except:
         print("The save_data function failed to excute:\n")
