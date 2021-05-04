@@ -77,7 +77,7 @@ def clean_data(df):
         #It looks like a data issue upon further investigation, so my preference is to drop these as the data for all other 35 
         #columns is marked as "0" and some of the messages are genres aren't populated either.
         #All other columns only have 1 or 0 labels. Additionally, the 188 rows being dropped
-        #Have 0 labels in all the other 35 categories.
+        #Have 0 labels in all the other 35 categories..
     
         df = df[df['related']!=2]
         
@@ -110,7 +110,6 @@ def save_data(df, database_filename):
     except:
         print("The save_data function failed to excute:\n")
         print(sys.exc_info()[0])
-
 
 def main():
     if len(sys.argv) == 4:
